@@ -1,4 +1,8 @@
-/* import */
+/* reset */
+
+@import url(./reset.css);
+
+/* font */
 
 @font-face {
     font-family: 'OTEnjoystoriesBA';
@@ -30,26 +34,32 @@
     url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
 }
 
-/* reset */
-
-@import url(./reset.css);
-
 /* design */
 
 body{
+    width: 100%;
+    height: 100%;
     background-color: #5B2386;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.mainWrapper{
+    padding: 140px 0;
 }
 
 .mainHeader{
-    text-align: center;
-    padding: 194px 0;
     background-image: url(/img/clock.png);
     background-repeat: no-repeat;
     background-position: center;
+    width: 100%;
+    height: 265px;
+    line-height: 265px;
 }
 
 .mainTitleImg{
     width: 530px;
+    vertical-align: middle;
 }
 
 .mainTitleText{
@@ -58,4 +68,14 @@ body{
     width: 1px;
     height: 1px;
     margin: -1px;
+}
+
+.quote{
+    font-family: 'OTEnjoystoriesBA';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    color: #F5DF4D;
+    margin: 68px 0;
 }
