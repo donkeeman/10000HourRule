@@ -39,3 +39,23 @@
 body{
     background-color: #5B2386;
 }
+
+.mainHeader{
+    text-align: center;
+    padding: 194px 0;
+    background-image: url(/img/clock.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mainTitleImg{
+    width: 530px;
+}
+
+.mainTitleText{
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
