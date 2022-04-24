@@ -79,3 +79,23 @@ body{
     color: #F5DF4D;
     margin: 68px 0;
 }
+
+.message{
+    width: 375px;
+    margin: 0 auto;
+    background-image: url(../img/quotes.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'GmarketSansMedium';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 0 60px;
+}
+
+.message strong{
+    font-family: 'GmarketSansBold';
+    font-weight: 700;
+    font-size: 24px;
+}
