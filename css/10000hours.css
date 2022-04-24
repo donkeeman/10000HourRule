@@ -96,6 +96,58 @@ body{
 
 .message strong{
     font-family: 'GmarketSansBold';
+    font-style: bold;
     font-weight: 700;
     font-size: 24px;
+}
+
+.enterInput{
+    margin: 102px auto;
+}
+
+.enterInput *{
+    font-family: 'GmarketSansMedium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    word-break: keep-all;
+}
+
+.enterInput p{
+    color: #FFFFFF;
+    margin: 27px 0;
+}
+
+.enterInput p label{
+    display: inline-block;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.enterInput p input{
+    width: 228px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 7px;
+    padding: 17px 0 16px;
+}
+
+.enterInput p input::placeholder{
+    color: #BABCBE;
+}
+
+.getResultButton{
+    background-color: #FCEE21;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 56px;
+    color: #5B2386;
+    padding: 21px 49px;
+    cursor: pointer;
 }
