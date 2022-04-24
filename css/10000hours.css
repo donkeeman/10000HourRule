@@ -42,6 +42,11 @@ body{
     background-color: #5B2386;
     text-align: center;
     box-sizing: border-box;
+    color: #FFFFFF;
+    font-family: 'GmarketSansMedium';
+    font-style: normal;
+    font-weight: 400;
+    word-break: keep-all;
 }
 
 .mainWrapper{
@@ -86,8 +91,6 @@ body{
     background-image: url(../img/quotes.png);
     background-position: center;
     background-repeat: no-repeat;
-    font-family: 'GmarketSansMedium';
-    font-weight: 400;
     font-size: 18px;
     line-height: 24px;
     color: #FFFFFF;
@@ -105,18 +108,10 @@ body{
     margin: 102px auto;
 }
 
-.enterInput *{
-    font-family: 'GmarketSansMedium';
-    font-style: normal;
-    font-weight: 400;
+.enterInput p{
+    margin: 27px auto;
     font-size: 24px;
     line-height: 24px;
-    word-break: keep-all;
-}
-
-.enterInput p{
-    color: #FFFFFF;
-    margin: 27px 0;
 }
 
 .enterInput p label{
@@ -129,9 +124,11 @@ body{
 }
 
 .enterInput p input{
+    font-family: 'GmarketSansMedium';
+    font-size: 24px;
+    line-height: 24px;
     width: 228px;
     box-sizing: border-box;
-    color: #FFFFFF;
     text-align: center;
     background-color: #FFFFFF;
     border: none;
@@ -144,10 +141,33 @@ body{
 }
 
 .getResultButton{
+    font-family: 'GmarketSansBold';
     background-color: #FCEE21;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     border-radius: 56px;
     color: #5B2386;
     padding: 21px 49px;
     cursor: pointer;
+    font-family: 'GmarketSansBold';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 24px;
+    vertical-align: bottom;
+}
+
+.result{
+    display: block;
+    margin: 147px auto 127px;
+}
+
+.result.hide{
+    display: none;
+}
+
+.result strong{
+    font-family: 'GmarketSansBold';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 72px;
 }

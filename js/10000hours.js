@@ -1,1 +1,13 @@
-// js file
+var goal = document.getElementById("goalInput");
+var time = document.getElementById("timeInput");
+var getResultButton = document.getElementById("getResultButton");
+var result = document.getElementById("result");
+var goalValue = document.getElementById("goalValue");
+var timeValue = document.getElementById("timeValue");
+
+getResultButton.onclick = function(){
+    goalValue.innerHTML = goal.value;
+    timeValue.innerHTML = Math.floor(10000 / parseInt(time.value));
+    result.classList.remove("hide");
+}
+

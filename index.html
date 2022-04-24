@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/10000hours.css">
-    <script src="./js/10000hours.js"></script>
+    <script src="./js/10000hours.js" defer></script>
     <title>1만 시간의 법칙 (클론 코딩)</title>
 </head>
 <body>
@@ -25,26 +25,28 @@
                 <br>
                 최소한 1만 시간의 훈련이 필요하다는 법칙이다.
             </p>
-            <fieldset class="enterInput">
-                <p>
-                    나는
-                    <label for="goalInput">분야 이름 입력</label>
-                    <input type="text" name="goal" class="goalInput" id="goalInput" placeholder="예) 프로그래밍">
-                    전문가가 될 것이다.
-                </p>
-                <p>
-                    그래서 앞으로 매일 하루에
-                    <label for="hourInput">시간 입력</label>
-                    <input type="text" name="hour" class="hourInput" id="hourInput" min="0" placeholder="예) 5">
-                    시간씩 훈련할 것이다.
-                </p>
+            <form action="">
+                <fieldset class="enterInput">
+                    <p>
+                        나는
+                        <label for="goalInput">분야 이름 입력</label>
+                        <input type="text" name="goal" class="goalInput" id="goalInput" placeholder="예) 프로그래밍">
+                        전문가가 될 것이다.
+                    </p>
+                    <p>
+                        그래서 앞으로 매일 하루에
+                        <label for="hourInput">시간 입력</label>
+                        <input type="number" name="time" class="timeInput" id="timeInput" min="0" placeholder="예) 5">
+                        시간씩 훈련할 것이다.
+                    </p>
+                </fieldset>
                 <button type="button" class="getResultButton" id="getResultButton">
                     나는 며칠 동안 훈련을 해야 1만 시간이 될까?
                 </button>
-            </fieldset>
-            <section class="result">
-
-            </section>
+            </form>
+            <p class="result hide" id="result">
+                당신은 <strong id="goalValue"></strong> 전문가가 되기 위해서 대략 <strong id="timeValue"></strong>일 동안 훈련하셔야 합니다.
+            </p>
         </section>
     </main>
 </body>
