@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/10000hours.css">
-    <script src="./js/10000hours.js" defer></script>
     <title>1만 시간의 법칙 (클론 코딩)</title>
 </head>
 <body>
     <main class="mainWrapper">
         <header class="mainHeader">
-            <h2 class="mainTitleText">1만 시간의 법칙</h2>
+            <h1 class="mainTitleText">1만 시간의 법칙</h1>
             <img class="mainTitleImg" src="./img/title.png" alt="">
         </header>
         <section>
@@ -44,13 +43,32 @@
                     나는 며칠 동안 훈련을 해야 1만 시간이 될까?
                 </button>
             </form>
-            <p class="result" id="result">
-                당신은 <strong id="goalValue"></strong> 전문가가 되기 위해서 대략 <strong id="timeValue"></strong>일 동안 훈련하셔야 합니다.
-
-                <button type="button" class="goButton">훈련하러 가기 GO!GO!</button>
+            <div class="resultContainer hide" id="result">
+                <p class="resultMessage">
+                    당신은 <strong id="goalValue"></strong> 전문가가 되기 위해서
+                    <br>
+                    대략 <strong id="timeValue"></strong>일 동안 훈련하셔야 합니다! :)
+                </p>
+                <button type="button" class="goButton" id="goButton">훈련하러 가기 GO!GO!</button>
                 <button type="button" class="shareButton">공유하기</button>
-            </p>
+            </div>
         </section>
+        <footer class="mainFooter">
+            <img src="./img/logo.png" alt="wenivLogo">
+            <p class="cautionMessage">
+                ※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다.
+                <br>
+                수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
+            </p>
+        </footer>
     </main>
+        <section class="modal hide" id="modal">
+            <h1 class="modalHeader">결과 화면</h1>
+            <h2>화이팅!!♥♥♥</h2>
+            <p class="cheerMessage">당신의 꿈을 응원합니다!</p>
+            <img src="./img/licat.png" alt="licatImage">
+            <button type="button" class="returnButton" id="returnButton">종료하고 진짜 훈련하러 가기 GO!GO!</button>
+        </section>
+    <script src="./js/10000hours.js"></script>
 </body>
 </html>

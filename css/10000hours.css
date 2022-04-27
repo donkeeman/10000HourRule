@@ -2,6 +2,13 @@
 
 @import url(./reset.css);
 
+/* color */
+
+:root{
+    --mainColor: #5B2386;
+    --buttonColor: #FCEE21;
+}
+
 /* font */
 
 @font-face {
@@ -36,10 +43,12 @@
 
 /* design */
 
+/* main */
+
 body{
     width: 100%;
     height: 100%;
-    background-color: #5B2386;
+    background-color: var(--mainColor);
     text-align: center;
     box-sizing: border-box;
     color: #FFFFFF;
@@ -47,10 +56,11 @@ body{
     font-style: normal;
     font-weight: 400;
     word-break: keep-all;
+    position: relative;
 }
 
 .mainWrapper{
-    padding: 70px 0;
+    padding: 60px 0;
 }
 
 .mainHeader{
@@ -82,7 +92,7 @@ body{
     font-size: 36px;
     line-height: 40px;
     color: #F5DF4D;
-    margin: 68px 0;
+    margin: 50px 0;
 }
 
 .message{
@@ -104,7 +114,7 @@ body{
 }
 
 .enterInput{
-    margin: 102px auto;
+    margin: 80px auto;
 }
 
 .enterInput p{
@@ -141,29 +151,43 @@ body{
 
 .getResultButton{
     font-family: 'GmarketSansBold';
-    background-color: #FCEE21;
+    background-color: var(--buttonColor);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     border-radius: 56px;
-    color: #5B2386;
-    padding: 21px 49px;
+    color: var(--mainColor);
+    padding: 12px 49px;
     cursor: pointer;
     font-family: 'GmarketSansBold';
     font-weight: 700;
     font-size: 24px;
+    position: relative;
 }
 
-.result{
+.getResultButton::after{
+    content: "";
+    background-image: url(../img/click.png);
+    width: 64px;
+    height: 72px;
+    position: absolute;
+    right: -64px;
+    pointer-events: none;
+}
+
+.resultContainer{
     display: block;
-    margin: 147px auto 127px;
-    font-size: 24px;
-    line-height: 24px;
 }
 
-.result.hide{
+.resultContainer.hide{
     display: none;
 }
 
-.result strong{
+.resultMessage{
+    font-size: 24px;
+    line-height: 24px;
+    margin: 147px auto 127px;
+}
+
+.resultMessage strong{
     font-family: 'GmarketSansBold';
     font-weight: 700;
     font-size: 72px;
@@ -172,23 +196,87 @@ body{
     margin: 0 12px;
 }
 
-.result button{
+.goButton, .shareButton, .returnButton{
+    border: none;
     font-family: 'GmarketSansBold';
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     border-radius: 56px;
-    color: #5B2386;
-    /* padding: 21px 49px; */
+    color: var(--mainColor);
+    padding: 21px 49px 15px;
     cursor: pointer;
     font-family: 'GmarketSansBold';
     font-weight: 700;
     font-size: 24px;
-    /* line-height: 24px; */
+    line-height: 24px;
+    margin: 0 9px;
 }
 
-.goButton{
-    background-color: #FCEE21;
+.goButton, .returnButton{
+    background-color: var(--buttonColor);
 }
 
 .shareButton{
     background-color: #FFFFFF;
+}
+
+.mainFooter{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    margin-top: 100px;
+}
+
+.cautionMessage{
+    margin-top: 20px;
+}
+
+/* modal */
+
+.modal{
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--mainColor);
+    font-family: 'tvN Enjoystories';
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    padding: 16px;
+}
+
+.modal.hide{
+    display: none;
+}
+
+.modalHeader{
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.modal h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 106px;
+}
+
+.cheerMessage{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.returnButton{
+    margin-top: 16px;
 }
