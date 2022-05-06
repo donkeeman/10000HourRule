@@ -77,7 +77,7 @@ body{
     vertical-align: middle;
 }
 
-.mainTitleText{
+.ir{
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
     width: 1px;
@@ -117,6 +117,10 @@ body{
     margin: 80px auto;
 }
 
+.enterInput legend{
+
+}
+
 .enterInput p{
     margin: 27px auto;
     font-size: 24px;
@@ -125,11 +129,6 @@ body{
 
 .enterInput p label{
     display: inline-block;
-    clip: rect(0, 0, 0, 0);
-    overflow: hidden;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
 }
 
 .enterInput p input{
@@ -253,14 +252,6 @@ body{
 
 .modal.hide{
     display: none;
-}
-
-.modalHeader{
-    clip: rect(0, 0, 0, 0);
-    overflow: hidden;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
 }
 
 .modal h2{

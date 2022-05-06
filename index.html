@@ -10,7 +10,7 @@
 <body>
     <main class="mainWrapper">
         <header class="mainHeader">
-            <h1 class="mainTitleText">1만 시간의 법칙</h1>
+            <h1 class="mainTitleText ir">1만 시간의 법칙</h1>
             <img class="mainTitleImg" src="./img/title.png" alt="">
         </header>
         <section>
@@ -24,22 +24,23 @@
                 <br>
                 최소한 1만 시간의 훈련이 필요하다는 법칙이다.
             </p>
-            <form action="">
+            <form action="./index.html" method="GET">
                 <fieldset class="enterInput">
+                    <legend class="ir">goalAndHour</legend>
                     <p>
                         나는
-                        <label for="goalInput">분야 이름 입력</label>
+                        <label for="goalInput ir">분야 이름 입력</label>
                         <input type="text" name="goal" class="goalInput" id="goalInput" placeholder="예) 프로그래밍">
                         전문가가 될 것이다.
                     </p>
                     <p>
                         그래서 앞으로 매일 하루에
-                        <label for="hourInput">시간 입력</label>
+                        <label for="hourInput ir">시간 입력</label>
                         <input type="number" name="time" class="timeInput" id="timeInput" min="0" placeholder="예) 5">
                         시간씩 훈련할 것이다.
                     </p>
                 </fieldset>
-                <button type="button" class="getResultButton" id="getResultButton">
+                <button type="submit" class="getResultButton" id="getResultButton">
                     나는 며칠 동안 훈련을 해야 1만 시간이 될까?
                 </button>
             </form>
@@ -62,13 +63,13 @@
             </p>
         </footer>
     </main>
-        <section class="modal hide" id="modal">
-            <h1 class="modalHeader">결과 화면</h1>
-            <h2>화이팅!!♥♥♥</h2>
-            <p class="cheerMessage">당신의 꿈을 응원합니다!</p>
-            <img src="./img/licat.png" alt="licatImage">
-            <button type="button" class="returnButton" id="returnButton">종료하고 진짜 훈련하러 가기 GO!GO!</button>
-        </section>
+    <section class="modal hide" id="modal">
+        <h1 class="modalHeader ir">결과 화면</h1>
+        <h2>화이팅!!♥♥♥</h2>
+        <p class="cheerMessage">당신의 꿈을 응원합니다!</p>
+        <img src="./img/licat.png" alt="licatImage">
+        <button type="button" class="returnButton" id="returnButton">종료하고 진짜 훈련하러 가기 GO!GO!</button>
+    </section>
     <script src="./js/10000hours.js"></script>
 </body>
 </html>

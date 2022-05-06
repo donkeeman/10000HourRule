@@ -8,10 +8,11 @@ const goButton = document.getElementById("goButton");
 const returnButton = document.getElementById("returnButton");
 const modal = document.getElementById("modal");
 
-getResultButton.onclick = function(){
+getResultButton.onclick = function(e){
     if(!goal.value || !time.value){
         return;
     }
+    e.preventDefault();
     goalValue.innerHTML = goal.value;
     timeValue.innerHTML = Math.floor(10000 / parseInt(time.value));
     result.classList.remove("hide");
