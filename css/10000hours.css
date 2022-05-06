@@ -79,6 +79,7 @@ body{
 
 .ir{
     clip: rect(0, 0, 0, 0);
+    display: inline-block;
     overflow: hidden;
     width: 1px;
     height: 1px;
@@ -117,18 +118,10 @@ body{
     margin: 80px auto;
 }
 
-.enterInput legend{
-
-}
-
 .enterInput p{
     margin: 27px auto;
     font-size: 24px;
     line-height: 24px;
-}
-
-.enterInput p label{
-    display: inline-block;
 }
 
 .enterInput p input{
